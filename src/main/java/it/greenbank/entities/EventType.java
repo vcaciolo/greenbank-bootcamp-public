@@ -1,0 +1,23 @@
+package it.greenbank.entities;
+
+public enum EventType {
+
+    ACCOUNT_WITDRAW,
+    ACCOUNT_DEPOSIT,
+    CREATED_NEW_USER,
+    UPDATED_USER,
+    DELETED_USER,
+    CREATED_NEW_ACCOUNT,
+    UPDATED_ACCOUNT,
+    DELETED_ACCOUNT,
+    USER_ENABLED,
+    USER_DISABLED,
+    USER_LOCKED,
+    USER_UNLOCKED,
+    EMIT_NEW_CARD,
+    CARD_LOCKED,
+    CARD_UNLOCKED,
+    CARD_DESTROYED,
+    CARD_WRONG_PIN;
+    
+}
