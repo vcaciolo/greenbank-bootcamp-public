@@ -51,7 +51,7 @@ You can run your application in dev mode that enables live coding using:
 ./mvnw compile quarkus:dev
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <your_github_codespace_url:8080>/q/dev/.
+> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <your_github_codespace_url>/q/dev/.
 
 > **_NOTE:_**  The default port is 8080. If you need to use another port, head to `application.properties` file. The rest of the file readme assume that you are using this port. You can replace '8080' with whatever port you are going to use in the following instructions.
 
