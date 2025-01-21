@@ -44,12 +44,6 @@ If you want, you can also clone this repository and work locally on your PC usin
 
 Before starting the application (as described below) please, take a moment to configure the application opening the `application.properties` file that can be found under the `src/main/resources` folder and setting everything is needed.
 
-## Enabling port-forwarding
-
-To be able to access the application (if not already done) enable the port-forwarding in your codespace for the 8080 port. There should be a tab in your codespace window named "Ports", in the bottom side of your screen. Follow the instructions to open the 8080 port.
-
-Codespaces will provide you a URL that is your `<your_github_codespace_url>`. Append to this URL the application path you want to access (like Swagger UI)
-
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
@@ -60,6 +54,12 @@ You can run your application in dev mode that enables live coding using:
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <your_github_codespace_url:8080>/q/dev/.
 
 > **_NOTE:_**  The default port is 8080. If you need to use another port, head to `application.properties` file. The rest of the file readme assume that you are using this port. You can replace '8080' with whatever port you are going to use in the following instructions.
+
+## Enabling port-forwarding
+
+To be able to access the application (if not already done) enable the port-forwarding in your codespace for the 8080 port. There should be a tab in your codespace window named "Ports", in the bottom side of your screen. Follow the instructions to open the 8080 port.
+
+Codespaces will provide you a URL that is your `<your_github_codespace_url>`. Append to this URL the application path you want to access (like Swagger UI)
 
 ## Accessing the exposed APIs
 
