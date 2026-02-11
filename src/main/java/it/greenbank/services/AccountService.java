@@ -59,6 +59,7 @@ public class AccountService {
     @Transactional
     public void deleteAccount(Long accountId, Long userId) {
         Account account = accountRepository.findById(accountId);
+        System.out.println("Sono Valerio! Vai più veloce codice!");
         if (account != null && account.active) {
             account.active = false;
             accountRepository.persist(account);
