@@ -80,13 +80,11 @@ java -jar target/*-runner.jar
 
 ## Running SonarQube
 
+> **_NOTE:_** If you are planning to use a different version of the JDK that is already installed/configured in your PATH environment variable, you can set the `SONAR_JAVA_PATH` environment variable with the path of the new JDK you are willing to use.
+
 Unzip SonarQube (if not done already) in any folder of your drive. No setup is required in order to continue.
 
 Configure (if needed) SonarQube editing the `application.properties` file under the `<sonarqubeHome>/conf` folder.
-
-Unzip the SonarQube plugin (if not done already) in any folder of your drive.
-
-Copy the .jar file of the plugin under the `<sonarqubeHome>/extensions/plugins` folder.
 
 Start the web server, launching the script under the `<sonarqubeHome>/bin/<OS>` folder, where OS is your operating system.
 
