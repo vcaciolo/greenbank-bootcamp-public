@@ -80,19 +80,23 @@ java -jar target/*-runner.jar
 
 ## Running SonarQube
 
-> **_NOTE:_** If you are planning to use a different version of the JDK that is already installed/configured in your PATH environment variable, you can set the `SONAR_JAVA_PATH` environment variable with the path of the new JDK you are willing to use.
-
 Unzip SonarQube (if not done already) in any folder of your drive. No setup is required in order to continue.
 
 Configure (if needed) SonarQube editing the `application.properties` file under the `<sonarqubeHome>/conf` folder.
 
-Start the web server, launching the script under the `<sonarqubeHome>/bin/<OS>` folder, where OS is your operating system.
+> **_NOTE:_** If the 9000 port is not available to you, change it from the `application.properties` file.
+
+> **_NOTE:_** If you are planning to use a different version of the JDK that is already installed/configured in your PATH environment variable, you can set the `SONAR_JAVA_PATH` environment variable with the path of the new JDK you are willing to use. Follow this guide: [Link](https://docs.sonarsource.com/sonarqube-server/server-installation/from-zip-file/advanced-setup#adjusting-java-exec-path)
+
+Start the web server, launching the script under the `<sonarqubeHome>/bin/<OS>` folder, where OS is your operating system. Follow this guide: [Link](https://docs.sonarsource.com/sonarqube-server/server-installation/from-zip-file/starting-stopping-server/from-zip-file)
 
 Open a new browser window and browse to: http://localhost:9000.
 
-> **_NOTE:_** If the 9000 port is not available to you, change it from the `application.properties` file.
+> **_NOTE:_** The default system administrator credentials are admin / admin. SonarQube will ask you to change the password after the login. Choose whatever meets the password requirements.
 
-> **_NOTE:_** The default system administrator credentials are admin / admin.
+You can install new plugins through the `Administration` section of SonarQube or manually unzipping the plugin inside the `<sonarqubeHome>/extensions/plugins` folder. Follow this guide: [Link](https://docs.sonarsource.com/sonarqube-server/server-installation/plugins/install-a-plugin)
+
+To upload your project inside a SonarQube instance and start the analysis, create a new `local project` and launch the maven command inside a terminal in your local machine, using the token that SonarQube creates for you. Here there are some additional details: [Link](https://docs.sonarsource.com/sonarqube-server/analyzing-source-code/scanners/sonarscanner-for-maven)
 
 ## Identify the running Java process
 
